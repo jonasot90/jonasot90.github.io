@@ -1,39 +1,99 @@
-html {
-    font-size: 10px;
-    font-family:
-    "Open Sans", sans-serif;
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 
+    "Roboto", sans-serif;
 }
+
+
 
 h1 {
     margin: 0;
-    padding: 20px 0;
-    color: brown;
-    text-shadow: 3px 3px 1px black;
-   font-size: 60px; 
+    padding: 20px ;
+    color: black;
+   font-size: 80px; 
    text-align: center;
 }
 
+h2 {
+    margin: 0;
+    padding: 5px 0;
+    color: black;
+   font-size: 20px; 
+   text-align: center;
+}
+
+
 p,
+a,
 li{
+    text-align: center;
     font-size: 16px;
     line-height: 2;
     letter-spacing: 1px;
 }
 
 html {
-    background-color: black;
+    background-color: blanchedalmond;
 }
 
-body {
-    width: fit-content;
-    margin: 0 auto;
-    background-color: red;
-    padding: 0 20px 20px 20px;
-    border: 5px solid black;
+header {
+    background-color: whitesmoke;
+    width: 100%;
 }
+
+
 
 img {
     display: block;
     margin: 0 auto;
     max-width: 100%;
+}
+
+.link-container {
+    text-align: center      ;
+}
+
+.container {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+}
+
+.left-section, .right-section {
+    flex: 1; /* Each section takes up half of the width */
+    padding: 20px;
+}
+
+.left-section {
+    background-color: lightblue;
+}
+
+.right-section {
+    background-color: lightcoral;
+}
+
+
+
+
+button {
+    display:block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Roboto";
+    text-align: center;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+button:hover {
+    background-color: #218838;
 }
