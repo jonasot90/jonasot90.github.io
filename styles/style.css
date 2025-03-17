@@ -55,6 +55,45 @@ header {
 }
 
 
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 70vh; /* Adjust height as needed */
+    background: url("../images/hero-image.jpg") no-repeat center center/cover;
+}
+
+/* Overlay to Darken the Image */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent dark overlay */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Hero Title */
+.hero h1 {
+    font-size: 8rem;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds text readability */
+}
+
+.hero h2 {
+    font-size: 2rem;
+    font-weight: lighter;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds text readability */
+}
+
 
 img {
     display: block;
