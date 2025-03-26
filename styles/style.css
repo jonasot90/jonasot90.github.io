@@ -2,13 +2,21 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 
-    "Roboto", sans-serif;
+    'Roboto', sans-serif;
     height: 100%;
     display: flex;
     flex-direction: column;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
 
 h1 {
     margin: 0;
@@ -22,7 +30,7 @@ h2 {
     margin: 0;
     padding: 5px 0;
     color: black;
-   font-size: 20px; 
+   font-size: 50px; 
    text-align: center;
 }
 
@@ -30,7 +38,7 @@ h3 {
     margin: 0;
     padding: 5px 0;
     color: black;
-   font-size: 16px; 
+   font-size: 30px; 
    text-align: center;
 }
 
@@ -40,13 +48,13 @@ p,
 a,
 li{
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 2;
     letter-spacing: 1px;
 }
 
 html {
-    background-color: blanchedalmond;
+    background-color: white;
 }
 
 header {
@@ -54,6 +62,15 @@ header {
     width: 100%;
 }
 
+.section {
+    width: 100%;
+    min-height: 100vh; /* Full screen height */
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 /* Hero Section */
 .hero {
@@ -61,6 +78,7 @@ header {
     width: 100%;
     height: 70vh; /* Adjust height as needed */
     background: url("../images/hero-image.jpg") no-repeat center center/cover;
+    font-family: 'Playfair Display', serif;
 }
 
 /* Overlay to Darken the Image */
@@ -89,11 +107,75 @@ header {
 
 .hero h2 {
     font-size: 2rem;
-    font-weight: lighter;
+    font-weight: bold;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds text readability */
 }
 
+
+/* Intro Section */
+.intro {
+    background-color: white;
+}
+
+/* Info Section */
+.info {
+    background-color: #26547f;
+    color: white;
+}
+
+
+.result{
+    background-color: white;
+   
+
+}
+
+
+/* Sponsor Section */
+.sponsors {
+    background-color: white;
+    padding: 60px 20px;
+    text-align: center;
+
+    /* Override inherited flex layout from .section */
+    display: block;
+}
+
+
+
+.sponsors h2 {
+    margin-bottom: 30px;
+    font-family: 'Playfair Display', serif;
+}
+
+
+.info h2,
+.info h3 {
+    color: white;
+}
+
+.content {
+    max-width: 1200px; /* or try 1000px for slightly less */
+    padding: 0 20px;   /* to give breathing space on mobile */
+    text-align: center;
+}
+
+.sponsor-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.sponsor-logos img {
+    max-height: 80px;
+    transition: transform 0.3s ease;
+}
+
+.sponsor-logos a:hover img {
+    transform: scale(1.1);
+}
 
 img {
     display: block;
