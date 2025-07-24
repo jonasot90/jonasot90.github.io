@@ -265,3 +265,12 @@ footer {
         flex-direction: column;
     }
 }
+
+.intro-map {
+    display: block;
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+    margin: 2rem auto 0 auto; /* top margin and center horizontally */
+    border-radius: 8px; /* optional: soft corners */
+}
